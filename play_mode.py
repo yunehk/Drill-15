@@ -50,7 +50,6 @@ def init():
 
 
 
-
 def pause():
     boy.pause()
 

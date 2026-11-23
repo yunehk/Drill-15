@@ -151,6 +151,7 @@ class Boy:
         if self.state == 'RUN':
             self.dir = 0
             self.stop_run()
+            
 
     def handle_event(self, event):
         if event.type == SDL_KEYDOWN and event.key == SDLK_SPACE:
@@ -190,6 +191,6 @@ class Boy:
         return self.x - 25, self.y - 50, self.x + 25, self.y + 50
 
     def handle_collision(self, group, other):
-        if group in ("boy:ball", "ball:zombie") :
+        if group in ("boy:ball", "ball:zombie", "boy, zombie") :
             self.ball_count += 1
          
