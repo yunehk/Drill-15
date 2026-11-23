@@ -52,6 +52,7 @@ class Zombie:
             image.composite_draw(0, 'h', self.x, self.y, self.size, self.size)
         else:
             image.draw(self.x, self.y, self.size, self.size)
+            
         draw_rectangle(*self.get_bb())
 
     

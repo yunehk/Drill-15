@@ -190,6 +190,6 @@ class Boy:
         return self.x - 25, self.y - 50, self.x + 25, self.y + 50
 
     def handle_collision(self, group, other):
-        if group == "boy:ball":
+        if group in ("boy:ball", "ball:zombie") :
             self.ball_count += 1
          
